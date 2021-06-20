@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2 class="title">VUE JS</h2>
+					<img src="./examples/assets/EAW5TPjj.jpg">
+					<div class="hljs-link" style="font-size: smaller;">https://github.com/XanDrDz</div>
+				</section>
+				<section>
+					<h3 class="title">What is Vue?</h3>
+					<div style="margin-top: 20px;" class="hljs-strong hljs-title">Vue is frontend JavaScript framework for building websites & user interfaces</div>
+					<div>
+						<ul style="margin-top: 30px; ">
+							<li style="font-size: 30px;">Vue is generally used to create single-page apps that run on the client, but can be used to create full stack applications by making HTTP requests to a backend server. Vue is popular with Node.js & Express (MEVN Stack)</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li style="font-size: 30px;">Vue can also run on the server-side by using a SSR framework like Nuxt</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3 class="title">Why Use Vue?</h3>
+					<ul>
+						<li>Create dynamic frontend apps & websites</li>
+						<li>Easy learning curve</li>
+						<li>Easy to integrate with other projects</li>
+						<li>Fast & lightweight</li>
+						<li>Virtual DOM</li>
+						<li>Extremly popular (and) rising</li>
+						<li>Great community</li>
+					</ul>
+					<img src="./examples/assets/unnamed.jpg" height="200" width="200">
+					<img src="./examples/assets/unnamed.jpg" height="200" width="200">
+					<img src="./examples/assets/unnamed.jpg" height="200" width="200">
+					<img src="./examples/assets/unnamed.jpg" height="200" width="200">
+				</section>
+				<section>
+					<h3 class="title">What should you know first?</h3>
+					<p class="hljs-strong hljs-title">Like with any framework, you should be comfortable with the underlying language first. In case , that is JavaScript</p>
+					<ul>
+						<li>JavaScript Fundamentals</li>
+						<li>Async Programming (promises)</li>
+						<li>Array Methods (forEach, map, filter, etc)</li>
+						<li>Fetch API/HTTP Requests</li>
+						<li>NPM (Node Package Manager)</li>
+					</ul>
+				</section>
+				<section>
+					<h4 class="title">Basic Layout of a Vue Component</h4>
+							<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+							< template >
+								< header >
+									<h1>{{title}}</h1>
+								< header >
+							< template >
+								< script > 
+								export default {
+									props: {
+										title: String,
+									},
+								}
+								< / >
+								< style scoped>
+								header {
+									display: flex;
+									justify-content: space-between;
+									align-items: center;
+									margin-bottom: 20px;
+								}
+								< / >
+						</script></code></pre>
+				</section>
+				<section>
+					<div class="title" style="margin-top: -100px">Working With State / Data</div>
+					<p class="hljs-strong hljs-title" style="font-size: 30px; margin-top: 100px;">Components can have their own state which can determine how a specific component behaves and what data is displayed</p>
+					<p class="hljs-strong hljs-name" style="font-size: 30px; margin-top: 100px;">Some state may be local to a specific component and some may be "global" or "app" level state that needs to be shared with multiple components</p>
+					<p class="hljs-strong hljs-deletion" style="font-size: 30px; margin-top: 100px;">Vuex is a state manage for global state in larger applications</p>
+				</section>
+				<section>
+					<h3 class="title">Option API vs. Composition API</h3>
+					<p>Vue 3 has the composition API, which aims to address code reusability and readability in Vue 3, especially in larger applications</p>
+				</section>
+				<section>
+					<h4 class="title">Vue CLI</h4>
+					<span>Standart tooling for Vue.js development</span>
+					<ul style="margin-top: 40px;">
+						<li>Command line interface for creating Vue apps</li>
+						<li>Dev server and easy production build</li>
+						<li>Optional GUI for managing Vue projects</li>
+						<li>Integrated testing, TypeScript support, ESlint & more</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="title">Thanks for attantion</h2>
+					<img src="./examples/assets/EAW5TPjj.jpg">
+					<div class="hljs-link" style="font-size: smaller;">https://github.com/XanDrDz</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
